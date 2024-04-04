@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "tailwindcss": "^3.4.1"
-  }
+  },
+  "name": "familyfitness",
+  "version": "1.0.0",
+  "description": "Family Fitness"
 }
