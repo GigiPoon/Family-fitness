@@ -14,12 +14,12 @@ module.exports = {
         'redish': '#9B3D3D',
       },
       screens: {
-        'sm': '700px',
-        // => @media (max-width: 700px) { ... }
-
-        'md': '960px',
-        // => @media (max-width: 960px) { ... }
-      },
+        '2xl': { 'max': '1535px' }, // => @media (max-width: 1535px) { ... }
+        'xl': { 'max': '1279px' }, // => @media (max-width: 1279px) { ... }
+        'lg': { 'max': '1023px' }, // => @media (max-width: 1023px) { ... }
+        'md': { 'max': '767px' }, // => @media (max-width: 767px) { ... }
+        'sm': { 'max': '639px' }, // => @media (max-width: 639px) { ... }
+      }
     },
   },
   plugins: [],

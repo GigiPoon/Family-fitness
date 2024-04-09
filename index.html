@@ -15,79 +15,86 @@
 <body class="bg-sandy font-gothic">
     <main class="m-auto pb-24">
         <section>
-            <div class="backgroundimg relative">
+            <div class="backgroundimg relative md:m-[-20px]">
                 <img src='../images/familyimage.png' alt='logo' class="bg-cover w-full">
             </div>
-            <div class="absolute top-10 left-6 flex justify-center items-center">
+            <div class="absolute top-10 left-6 flex justify-center items-center md:relative md:flex-col md:top-0 md:left-0">
                 <img src='../images/familyfitness.png' alt='logo' class="px-6">
-                <h1 class="text-redish text-6xl flex flex-col font-semibold border-l-2 py-2 border-redish pt-2 pb-4 px-6 font-gothic"><span>Keep up with</span> your grandkids</h1>
+                <h1 class="text-redish text-6xl flex flex-col font-semibold border-l-2 py-2 border-redish pt-2 pb-4 px-6 font-gothic md:p-0 md:border-none md:pb-7 md:text-center sm:text-5xl"><span>Keep up with</span> your grandkids</h1>
             </div>
         </section>
-        <section class="">
+        <section>
             <h2 class="text-redish text-3xl	font-semibold text-center mb-3">Family Fitness Day Registration</h2>
-            <p class="text-xl text-center font-serif">Thank you for your interest and registration for Family Fitness Day!</p>
-            <p class="text-xl text-center font-serif mb-11">Please review the form and enter your information accordingly.</p>
-            <div class="flex justify-center">
-                <div class="leftside bg-redish text-white rounded-lg w-1/5 mr-[50px] flex flex-col h-[350px] py-[30px] px-[30px]">
-                    <p><span class="font-extrabold">Family:</span> Fitness Day</p>
-                    <p><span class="font-extrabold">Where:</span> Location/Address</p>
-                    <p><span class="font-extrabold">When:</span> Date/Time</p>
-                    <p><span class="font-extrabold">What:</span> Family Fitness Day is</p> 
-                    <p><span class="font-extrabold">What to Bring:</span> items</p>
-                    <p><span class="font-extrabold">Registration Fee:</span></p>
+            <p class="text-xl text-center font-serif sm:w-4/5 sm:m-auto sm:text-lg">Thank you for your interest and registration for Family Fitness Day!</p>
+            <p class="text-xl text-center font-serif mb-11 sm:w-4/5 sm:m-auto sm:text-lg sm:mb-4">Please review the form and enter your information accordingly.</p>
+            <div class="flex justify-center lg:flex-col lg:justify-center lg:items-center">
+                <div class="self-start leftside bg-redish text-white rounded-lg w-1/5 mr-[50px] flex flex-col py-[30px] px-[30px] lg:w-9/12 lg:m-auto lg:text-center">
+                    <p><span class="font-extrabold">Family Fitness Day</span></p>
+                    <p class="pt-2"><span class="font-extrabold">What:</span> Family Fitness Day is a day event to get the family moving. There will be light physical activities in the park that can be enjoyed by all ages!</p>
+                    <p class="pt-2"><span class="font-extrabold">Where:</span> Local Public Park</p>
+                    <p class="pt-2"><span class="font-extrabold">When:</span> May 31, 2024 10am - 2pm</p> 
+                    <p class="pt-2"><span class="font-extrabold">What to Bring:</span> Comfortable clothes, appropriate walking shoes, water</p>
+                    <p class="pt-2"><span class="font-extrabold">Registration Fee:</span> $1 per person</p>
                 </div>
-                <div class="rightside w-2/5">
+                <div class="rightside w-2/5 lg:w-9/12">
                     <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeweeIYNFVqt5vWIwRyG8mQappd6v2YoZi58boP6nKOY4X97w/formResponse" method="post">
-                        <div class="radio bg-white mb-4 rounded-lg flex justify-center flex-col py-[20px] px-[30px]">
-                            <span>Consent Notice:</span>
-                            <p>I understand that by agreeing to sign up for Family Fitness Day, I, and those I have signed up, will be participating at my/our own discretion and responsible for ourselves.</p>
-                            <label for="I agree">
-                                <input type="radio" name="entry.1398098746" id="Iagree" value="I agree" required>
-                                <span>Agree</span>
+                        <div class="radio bg-white my-4 rounded-lg flex justify-center flex-col py-[20px] px-[30px]">
+                            <span class="mb-3">Consent Notice:</span>
+                            <p class="mb-3">I understand that by agreeing to sign up for Family Fitness Day, I, and those I have signed up, will be participating at my/our own discretion and responsible for ourselves.</p>
+                            <label class="mb-3" for="I agree">
+                                <input class="mr-2" type="radio" name="entry.1398098746" id="Iagree" value="I agree" required>
+                                <span>I agree</span>
                             </label>
-                            <label for="I choose not to consent">
-                                <input type="radio" name="entry.1398098746" id="Ichoosenottoconsent" value="I choose not to consent">
+                            <label class="mb-2" for="I choose not to consent">
+                                <input class="mr-2" type="radio" name="entry.1398098746" id="Ichoosenottoconsent" value="I choose not to consent">
                                 <span>I choose not to consent</span>
                             </label>
                         </div>
                         <div class="radio bg-white mb-4 rounded-lg flex justify-center flex-col py-[20px] px-[30px]">
-                            <span>Registration Fee Notice:</span>
-                            <label for="I agree">
-                                <input type="radio" name="entry.1836720334" id="Iagree" value="I agree" required>
+                            <span class="mb-3">Registration Fee Notice:</span>
+                            <p class="mb-3">Family Fitness Day is funded through ticket sales. By participating in Family Fitness Day, I agree to pay the ticket price of $1 per person</p>
+                            <label class="mb-3" for="I agree">
+                                <input class="mr-2" type="radio" name="entry.1836720334" id="Iagree" value="I agree" required>
                                 <span>I agree</span>                                
                             </label>
-                            <label for="I choose not to register">
-                                <input type="radio" name="entry.1836720334" id="Ichoosenottoregister" value="I choose not to register">
+                            <label class="mb-2" for="I choose not to register">
+                                <input class="mr-2" type="radio" name="entry.1836720334" id="Ichoosenottoregister" value="I choose not to register">
                                 <span>I choose not to register</span>                                
                             </label>
                         </div>
                         <div class="formElement bg-white mb-4 rounded-lg flex justify-center flex-col py-[20px] px-[30px]">
-                            <span>First and Last Name:</span>
-                                <input type="text" name="entry.1420244297" placeholder="Your Answer" required>
+                            <span class="mb-3">First and Last Name:</span>
+                                <input class="border-b border-gray-300 text-gray-800 w-72 sm:w-full" type="text" name="entry.1420244297" placeholder="Your Answer" required>
                         </div>
                         <div class="formElement bg-white mb-4 rounded-lg flex justify-center flex-col py-[20px] px-[30px]">
-                            <span>Age:</span>
-                            <input type="text" name="entry.1769922771" placeholder="Your Answer">
+                            <span class="mb-3">Age:</span>
+                            <input class="border-b border-gray-300 text-gray-800 w-72 sm:w-full" type="text" name="entry.1769922771" placeholder="Your Answer">
                         </div>
                         <div class="formElement bg-white mb-4 rounded-lg flex justify-center flex-col py-[20px] px-[30px]">
-                            <span>Signing up other participants within your group/family? Insert their first and last names, age.</span>
-                            <p>For example:
-                            Harry Reed, 9
+                            <span class="mb-3">Signing up other participants within your group/family? Insert their first and last names, age.</span>
+                            <p class="mb-3">For example: <br>
+                            Harry Reed, 9 <br>
                             Olivia Reed, 7
                             </p>
-                            <input type="text" name="entry.851549304" placeholder="Your Answer">
+                            <input class="border-b border-gray-300 text-gray-800 w-72 sm:w-full" type="text" name="entry.851549304" placeholder="Your Answer">
                         </div>
                         <div class="formElement bg-white mb-4 rounded-lg flex justify-center flex-col py-[20px] px-[30px]">
-                            <span>Enter your email if you wish to opt into email notification reminders</span>
-                            <input type="text" name="entry.1382926876" placeholder="Your Answer">
+                            <span class="mb-3">Enter your email if you wish to opt into email notification reminders</span>
+                            <input class="border-b border-gray-300 text-gray-800 w-72 sm:w-full" type="text" name="entry.1382926876" placeholder="Your Answer">
                         </div>
                         <div class="formElement bg-white mb-4 rounded-lg flex justify-center flex-col py-[20px] px-[30px]">
-                            <span>Enter your phone number if you wish to opt into text notification reminders</span>
-                            <input type="text" name="entry.541835144" placeholder="Your Answer">
+                            <span class="mb-3">Enter your phone number if you wish to opt into text notification reminders</span>
+                            <input class="border-b border-gray-300 text-gray-800 w-72 sm:w-full" type="text" name="entry.541835144" placeholder="Your Answer">
+                        </div>
+                        <div class="formElement bg-white mb-4 rounded-lg flex justify-center flex-col py-[20px] px-[30px]">
+                            <span class="mb-3">Enter your address if you wish to opt into mailed reminders</span>
+                            <input class="border-b border-gray-300 text-gray-800 w-72 sm:w-full" type="text" name="entry.1411317532" placeholder="Your Answer">
                         </div>
                         <div class="formElement bg-white mb-10 rounded-lg flex justify-center flex-col py-[20px] px-[30px]">
-                            <span>Enter your address if you wish to opt into mailed reminders</span>
-                            <input type="text" name="entry.1411317532" placeholder="Your Answer">
+                            <span class="mb-3">Would you be interested in donating to continue Family Fitness Day? If so, please let us know the amount.</span>
+                            <p class="mb-3">Family Fitness Day would be put together by volunteers and funds from the community - your contribution would help us
+                            put on more events for more families to find joy in movement.</p>
+                            <input class="border-b border-gray-300 text-gray-800 w-72 sm:w-full" type="text" name="entry.708902869" placeholder="Your Answer">
                         </div>
 
                         <button class="bg-redish text-white rounded-lg py-4 px-8">Submit</button>
